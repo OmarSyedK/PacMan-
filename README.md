@@ -38,9 +38,18 @@ Welcome to my Java-based Pac-Man clone! This project is a tribute to the classic
 
 ---
 
+## ⚙️ Technical Breakdown
 
+This project uses a straightforward and effective design:
 
-## 🚀 How to run
+* **Game Loop:** A `javax.swing.Timer` is configured to fire every 50ms (driving a 20 FPS frame rate). Each tick calls the `actionPerformed` method, which updates the game state (`move()`) and redraws the screen (`repaint()`).
+* **Entity Management:** All game objects (Pac-Man, ghosts, walls, food) are instances of a flexible inner `Block` class. They are stored in `HashSet` collections for efficient access and management.
+* **Map Generation:** The game level is loaded from a `String[]` called `tileMap`. The code iterates through this array, creating `Block` objects based on the character codes ('X' for wall, 'P' for Pac-Man, etc.). This makes designing new levels as simple as editing a text-based map.
+* **Collision Detection:** A simple and efficient bounding-box collision method checks for intersections between Pac-Man, ghosts, walls, and food pellets.
+
+---
+
+## 🚀 Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine.
 
@@ -58,29 +67,11 @@ Follow these instructions to get a copy of the project up and running on your lo
     ```sh
     cd your-repository-name
     ```
-3.  **Create a `Main.java` file:**
-    Your `PacMan.java` is a `JPanel`, so it needs a `JFrame` to be displayed. Create a new file named `Main.java` in the same directory and add the following code:
-    ```java
-    import javax.swing.*;
-
-    public class Main {
-        public static void main(String[] args) {
-            JFrame frame = new JFrame("Pac-Man");
-            PacMan pacmanGame = new PacMan();
-            frame.add(pacmanGame);
-            frame.pack();
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setLocationRelativeTo(null);
-            frame.setVisible(true);
-            pacmanGame.requestFocus();
-        }
-    }
-    ```
-4.  **Compile all Java files:**
+3.  **Compile all Java files:**
     ```sh
     javac *.java
     ```
-5.  **Run the main game file:**
+4.  **Run the main game file:**
     ```sh
     java Main
     ```
@@ -95,3 +86,4 @@ Follow these instructions to get a copy of the project up and running on your lo
 * **Restart:** After a "Game Over" or "You Won" screen, press any key to restart the game.
 
 ---
+
