@@ -10,11 +10,18 @@ public class App {
         int boardHeight = rowCount * pixelSize;
 
         JFrame frame = new JFrame("PacMan");
-        frame.setVisible(true);
+        //frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(boardWidth, boardHeight);
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
+
+        PacMan pacmanGame = new PacMan();
+        frame.add(pacmanGame);
+        frame.pack();
+        pacmanGame.requestFocus();
+        pacmanGame.requestFocus();
+        frame.setVisible(true);
 
 
 
