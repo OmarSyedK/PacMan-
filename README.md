@@ -11,11 +11,11 @@ Welcome to my Java-based Pac-Man clone! This project is a tribute to the classic
 
 *Gameplay in action:*
 
-![In-Game Screenshot](https://github.com/user-attachments/assets/3509c203-2150-4270-bd4e-3238fae17cb0)
+![In-Game Screenshot](https://github.com/user-attachments/assets/cee11b3c-6185-4246-be9f-ef926997639b)
 
 *Game Over screen:*
 
-![Game Over Screen](https://github.com/user-attachments/assets/f46a3f29-1b70-475e-a57e-b2c6b98bdb76)
+![Game Over Screen](https://github.com/user-attachments/assets/f38b1e94-8e23-453d-91b0-fa4454e8aa53)
 
 ---
 
