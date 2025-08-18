@@ -1,13 +1,13 @@
-# Pac-Man Clone in Java 🕹️
+# Pac-Man in Java 
 
 
 ## Overview
 
-Welcome to my Java-based Pac-Man clone! This project is a tribute to the classic arcade game, built from the ground up using **Java Swing** and **AWT** for the graphical user interface and event handling. The game board is rendered on a `JPanel`, and the logic is driven by a `javax.swing.Timer` to create the main game loop. The goal was to recreate the iconic gameplay mechanics, including maze navigation, pellet-chomping action, and ghost avoidance.
+This project is a tribute to the classic arcade game, built from the ground up using **Java Swing** and **AWT** for the graphical user interface and event handling. The game board is rendered on a `JPanel`, and the logic is driven by a `javax.swing.Timer` to create the main game loop. The goal was to recreate the iconic gameplay mechanics, including maze navigation, pellet-chomping action, and ghost avoidance.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 *Gameplay in action:*
 
@@ -19,7 +19,7 @@ Welcome to my Java-based Pac-Man clone! This project is a tribute to the classic
 
 ---
 
-## 🌟 Features
+## Features
 
 * **Classic Gameplay:** Experience the authentic Pac-Man feel. Navigate the maze, eat all the pellets, and avoid the ghosts!
 * **Tile-Based Map:** The game maze is easily customizable through a simple `String` array in the code.
